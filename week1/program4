@@ -1,0 +1,25 @@
+import java.util.*;
+class Main
+{
+static int minReplacements(int n1)
+{
+int count=0;
+while(n1>1)
+{
+if(n1%2==0)
+n1=n1/2;
+else
+n1=n1-1;
+count++;
+}
+return count;
+}
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int n1;
+int count=minReplacements(n);
+System.out.println(count);
+}
+}
