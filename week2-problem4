@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main
+{
+  public static void main (String[]args)
+  {
+    Scanner sc = new Scanner (System.in);
+    int n = sc.nextInt ();
+    int count = 0;
+
+ List < Integer > l1 = new LinkedList <> ();
+int b=sc.nextInt();     
+      l1.add (b);
+    for (int i = 1; i < n; i++)
+      {
+	l1.add (sc.nextInt ());
+	if (l1.get(i)-b>1)
+	{
+	  System.out.println (b + 1);
+	  break;
+	}
+	b = l1.get (i);
+      }
+  }
+}
