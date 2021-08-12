@@ -21,5 +21,6 @@ max1=Math.min(l3.get(1),max1);
 int min1=Math.max(l1.get(n1-1),l2.get(n2-1));
 min1=Math.max(l3.get(n3-1),max1);
 System.out.println(Math.abs(min1-max1));
+System.out.println(Math.abs(min1-max1));
 }
 }
